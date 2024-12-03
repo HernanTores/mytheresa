@@ -1,0 +1,23 @@
+#my-list-page {
+    padding: 15px;
+
+    .movie-list {
+      list-style: none;
+      padding: 0;
+  
+      .movie-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+  
+        .movie-item-controls {
+            margin-left: 10px;
+
+            h2 {
+                margin: 5px 0;
+            }
+        }   
+      }
+    }
+  }
+  

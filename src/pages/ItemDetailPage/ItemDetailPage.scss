@@ -1,0 +1,69 @@
+#item-detail {
+
+  .image-detail-section {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .image-container {
+      display: flex;
+
+      .movie-detail__image {
+        border-radius: var(--base-borded-radius);
+        width: 300px;
+        height: auto;
+      }
+    }
+
+    .movie-detail__content {
+      padding: 15px;
+      height: 100%;
+
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+
+  &.category-comedy {
+    font-family: "Fredoka", sans-serif;
+  
+    .movie-detail__image {
+      box-shadow: 55px 60px 188px 90px rgba(255, 193, 7, 0.3);
+      -webkit-box-shadow: 55px 60px 188px 90px rgba(255, 193, 7, 0.3);
+      -moz-box-shadow: 55px 60px 188px 90px rgba(255, 193, 7, 0.3);
+    }
+  }
+
+  &.category-action {
+    font-family: "Oswald", sans-serif;
+  
+    .movie-detail__image {
+      box-shadow: 55px 60px 188px 90px rgba(229, 9, 20, 0.3);
+      -webkit-box-shadow: 55px 60px 188px 90px rgba(229, 9, 20, 0.3);
+      -moz-box-shadow: 55px 60px 188px 90px rgba(229, 9, 20, 0.3);
+    }
+  
+  }
+
+  &.category-adventure {
+    font-family: "Cinzel", serif;
+  
+    .movie-detail__image {
+      box-shadow: 55px 60px 188px 90px rgba(0, 200, 83, 0.3);
+      -webkit-box-shadow: 55px 60px 188px 90px rgba(0, 200, 83, 0.3);
+      -moz-box-shadow: 55px 60px 188px 90px rgba(0, 200, 83, 0.3);
+    }
+  }
+}
+
+
+
+
+

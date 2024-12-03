@@ -1,0 +1,15 @@
+#home-page {
+
+    .layout {
+        position: absolute;
+        top: 400px;
+        right: 50%;
+        transform: translateX(50%);
+        z-index: 10;
+
+        @media screen and (max-width: 1200px) {
+            position: static;
+            transform: none;
+        }
+    }
+}

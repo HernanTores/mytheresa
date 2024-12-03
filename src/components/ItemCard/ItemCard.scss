@@ -1,0 +1,20 @@
+.item-card {
+  min-width: 150px;
+  height: 225px;
+  border-radius: var(--base-borded-radius);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent; 
+
+  &:hover {
+    transform: scale(1.1);
+    border-color: var(--text-color);
+  }
+
+  .card-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,22 @@
+.trading-movie-container {
+    .trending-movie {
+        height: 110vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 1200px) {
+            height: 60vh;
+        }
+    }
+
+    .trending-movie:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 44%, rgba(20, 20, 20, 1) 80%);
+    }
+}

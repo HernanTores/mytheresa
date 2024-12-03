@@ -1,0 +1,77 @@
+header {
+  color: var(--text-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background .3s;
+
+  &.scrolled {
+    background: var(--background-color);
+  }
+
+  >div {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: var(--menu-height);
+    gap: 40px;
+
+    @media screen and (max-width: 1200px) {
+      margin: 0 10px;
+    }
+  }
+
+  #logo {
+    filter: brightness(0) invert(1);
+    height: 20px;
+    width: auto;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+      padding: 3px 0;
+      position: relative;
+
+      &:hover {
+        font-weight: bold;
+      }
+
+      &::after {
+        content: "";
+        background-color: #ffffff;
+        height: 0px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transition: height .3s;
+        border-radius: 5px;
+      }
+
+      &.active-link {
+        font-weight: bold;
+        cursor: default;
+
+        &::after {
+          height: 3px;
+        }
+      }
+    }
+  }
+
+  #linkedin {
+    height: 30px;
+    width: 30px;
+    filter: brightness(0) invert(1);
+  }
+}
