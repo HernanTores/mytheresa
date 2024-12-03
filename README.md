@@ -8,7 +8,7 @@
 
 ## Instalación y Ejecución
     git clone https://github.com/HernanTores/mytheresa
-    cd react-app-from-scratch
+    cd mytheresa
     npm install
     npm start
 
